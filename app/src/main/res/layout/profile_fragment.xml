@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    >
+    <ImageView
+        android:src="@drawable/profile"
+        android:id="@+id/profilePicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/username"
+        android:textColor="#fff"
+        android:textSize="45dp"
+        android:text="User Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/firtLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:text="My Students"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/contentSize"/>
+            <TextView
+                android:id="@+id/totalStudents"
+                android:text="0"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/contentSize"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:textSize="@dimen/contentSize"
+                android:text="My Teachers"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/totalTeachers"
+                android:text="0"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/contentSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+            <TextView
+                android:textSize="@dimen/contentSize"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="My Fellows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/totalFellows"
+                android:text="0"
+
+                android:textSize="@dimen/contentSize"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="25dp"
+        android:id="@+id/postButton"
+        android:textColor="@color/white"
+        android:text="New Post"
+        android:background="@color/colorPrimary"
+        android:layout_width="@dimen/loginButtonWidth"
+        android:layout_height="@dimen/loginButtonHeight" />
+    <Button
+        android:layout_marginTop="25dp"
+        android:id="@+id/logoutButton"
+        android:textColor="@color/white"
+        android:text="Logout"
+        android:background="@color/colorPrimary"
+        android:layout_width="@dimen/loginButtonWidth"
+        android:layout_height="@dimen/loginButtonHeight" />
+</LinearLayout>

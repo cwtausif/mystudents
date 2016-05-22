@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.glowingsoft.mystudents.NewPostActivity">
+    <TextView
+        android:id="@+id/newpost"
+        android:text="New Post"
+        android:gravity="center_horizontal"
+        android:textSize="45dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/postMessage"
+        android:hint="Write something to share"
+        android:layout_width="wrap_content"
+        android:ems="15"
+        android:layout_height="300dp"
+        android:gravity="top"
+        android:background="@android:color/transparent"
+        />
+    <Button
+        android:layout_marginTop="25dp"
+        android:id="@+id/publishButton"
+        android:textColor="@color/white"
+        android:text="Post"
+        android:background="@color/colorPrimary"
+        android:layout_width="@dimen/loginButtonWidth"
+        android:layout_height="@dimen/loginButtonHeight" />
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.glowingsoft.mystudents.MainActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/log_height"
+        android:layout_marginTop="0dp"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/email"
+        android:hint="email"
+        android:ems="11"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/password"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:ems="11"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/loginbutton"
+        android:layout_width="@dimen/loginButtonWidth"
+        android:layout_height="@dimen/loginButtonHeight" />
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/signupButton"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/signup"
+        android:layout_width="@dimen/loginButtonWidth"
+        android:layout_height="@dimen/loginButtonHeight" />
+
+</LinearLayout>
